@@ -8,7 +8,7 @@ class Xlnt < Formula
   depends_on "cmake" => :build
 
   def install
-    system "./configure", "--prefix=#{prefix}"
+    system "python", "configure", "--prefix=#{prefix}"
     system "make", "-C", "build", "install"
   end
 end
